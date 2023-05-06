@@ -2,7 +2,7 @@ const inquirer = require("inquirer");
 const mysql = require("mysql2");
 const cTable = require("console.table");
 
-
+// Connects app to mysql
 const db = mysql.createConnection({
 host: "localhost",
 
@@ -12,7 +12,7 @@ password: "Tabif&185",
 database: "employees_db",
 });
 
-
+// questions to view in command line
 const questions = [
 {
     type: "list",
@@ -39,7 +39,7 @@ name: "firstquestion",
 
 function init(response) {
 inquirer.prompt(questions).then((response) => {
-    determineResponse(response);
+determineResponse(response);
 });
 }
 
