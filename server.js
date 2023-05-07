@@ -74,6 +74,8 @@ INNER JOIN employee AS b
     );
 }
 
+
+// Questions for updating employee database
 else if (response.firstquestion === "Add a department") {
     addDepartment();
 } 
@@ -120,6 +122,8 @@ else if (response.firstquestion === "Quit") {
     return;
 }
 }
+
+// Functions that will help update employee roles
 
 async function deleteDepartment () {
     let deptList = await generateDeptList();
