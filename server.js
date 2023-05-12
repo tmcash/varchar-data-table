@@ -131,7 +131,7 @@ async function deleteDepartment () {
     const deptQuestions = [
     {
     type: "list",
-    message: "Choose which department you'd like to delete:",
+    message: "Choose which department you would like to delete:",
     choices: deptList,
     name: "deptid",
     }
